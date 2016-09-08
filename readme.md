@@ -10,15 +10,15 @@ $ npm install string-fingerprint
 
 ## Usage
 
-```
+```js
 
-const toFingerprint = require('string-fingerprint');
+const toFingerprint = require('./');
 
-const str = 'fo$rß43ß3ß4ß34'
+const str = 'áé';
 const strFingerprint = toFingerprint(str);
 
-/*
-...
-*/
+console.log(strFingerprint);
+/* ae */
+
 
 ```

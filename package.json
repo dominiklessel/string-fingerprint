@@ -1,0 +1,44 @@
+{
+  "name": "string-fingerprint",
+  "version": "1.0.0",
+  "description": "Creates a string fringerprint",
+  "engines": {
+    "node": ">=4"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "xregexp": "^3.1.1"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "xo": "^0.16.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominiklessel/string-fingerprint.git"
+  },
+  "keywords": [
+    "string",
+    "fingerprint"
+  ],
+  "author": "Dominik Lessel <dominik@mifitto.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dominiklessel/string-fingerprint/issues"
+  },
+  "homepage": "https://github.com/dominiklessel/string-fingerprint#readme",
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "rules": {
+      "comma-dangle": ["error", "always-multiline"],
+      "babel/arrow-parens": 0
+    }
+  }
+}

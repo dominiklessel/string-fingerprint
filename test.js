@@ -8,24 +8,19 @@ const toFingerprint = require('./');
 // Helpers
 const compare = (t, actual, expected) => t.is(actual.trim(), expected.trim());
 
-// Test
-test('toFingerprint(Marc `O Polo)', (t) => {
-  const input = 'Marc `O Polo';
-  const fingerprint = toFingerprint(input);
+// Test strings
+const testStrings = {
+  'Marc `O Polo': 'marc o polo',
+  'Marc \'O Polo': 'marc o polo',
+  'Marc ’O Polo': 'marc o polo',
+  'K•Swiss': 'kswiss',
+  'Rudolf Scheer & Söhne': 'rudolf scheer sohne',
+  'Donic-Schildkröt': 'donicschildkrot',
+  'Ambré': 'ambre',
+  'CAFèNOIR': 'cafe noir',
+};
 
-  compare(t, fingerprint, 'marc o polo');
-});
-
-test('toFingerprint(Marc \'O Polo)', (t) => {
-  const input = 'Marc \'O Polo';
-  const fingerprint = toFingerprint(input);
-
-  compare(t, fingerprint, 'marc o polo');
-});
-
-test('toFingerprint(Marc ’O Polo)', (t) => {
-  const input = 'Marc ’O Polo';
-  const fingerprint = toFingerprint(input);
-
-  compare(t, fingerprint, 'marc o polo');
-});
+// Tests
+Object
+  .keys(testStrings)
+  .forEach((str) => test(str, (t) => compare(t, toFingerprint(str), testStrings[str])));

@@ -1,6 +1,6 @@
 {
   "name": "string-fingerprint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates a string fringerprint",
   "engines": {
     "node": ">=4"
@@ -37,7 +37,10 @@
     "esnext": true,
     "space": true,
     "rules": {
-      "comma-dangle": ["error", "always-multiline"],
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
       "babel/arrow-parens": 0
     }
   }

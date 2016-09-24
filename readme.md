@@ -1,6 +1,7 @@
 # string-fingerprint
 > Creates a string fringerprint
 
+[![CircleCI](https://circleci.com/gh/dominiklessel/string-fingerprint.svg?style=svg)](https://circleci.com/gh/dominiklessel/string-fingerprint)
 
 ## Install
 

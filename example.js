@@ -7,4 +7,4 @@ const str = 'áé';
 const strFingerprint = toFingerprint(str);
 
 console.log(strFingerprint);
-/* ae */
+// => ae

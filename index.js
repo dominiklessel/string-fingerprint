@@ -69,7 +69,7 @@ module.exports = (str) => {
   }
 
   if (typeof str !== 'string') {
-    throw new Error(`${str} is not a string!`);
+    throw new TypeError(`${str} is not a string!`);
   }
 
   return toFingerprint(str);

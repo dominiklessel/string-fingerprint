@@ -1,6 +1,4 @@
 
-'use strict';
-
 // Modules
 const test = require('ava');
 const toFingerprint = require('./');

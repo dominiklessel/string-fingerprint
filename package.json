@@ -36,12 +36,22 @@
   "xo": {
     "esnext": true,
     "space": true,
+    "ignores": [
+      "test/*"
+    ],
     "rules": {
+      "arrow-parens": [
+        "error",
+        "always"
+      ],
       "comma-dangle": [
         "error",
         "always-multiline"
       ],
-      "babel/arrow-parens": 0
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ]
     }
   }
 }

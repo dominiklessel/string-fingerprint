@@ -44,7 +44,7 @@ const normalizeUnicodeChar = (unicodeChar) => {
 
 const normalizeUnicodeString = (string) => string.split('').map(normalizeUnicodeChar).join('');
 
-const toFingerprint = (string) => {
+const toFingerprint = (string, joinSeparator) => {
   const unicodePunctuation = xRegExp('\\p{P}', 'g');
   const unicodeControlChars = xRegExp('\\p{Cc}', 'g');
   const accents = xRegExp('´|˝|`|῾|᾿', 'g');
@@ -59,11 +59,11 @@ const toFingerprint = (string) => {
     .split(/\s+/)
     .filter((value, index, self) => self.indexOf(value) === index)
     .sort()
-    .join(' ');
+    .join(joinSeparator);
 };
 
 // Export
-module.exports = (str) => {
+module.exports = (str, { joinSeparator = ' ' } = {}) => {
   if (!str) {
     throw new Error('`str` is required!');
   }
@@ -72,5 +72,5 @@ module.exports = (str) => {
     throw new TypeError(`${str} is not a string!`);
   }
 
-  return toFingerprint(str);
+  return toFingerprint(str, joinSeparator);
 };

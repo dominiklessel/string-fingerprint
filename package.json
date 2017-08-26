@@ -10,11 +10,11 @@
     "index.js"
   ],
   "dependencies": {
-    "xregexp": "^3.1.1"
+    "xregexp": "^3.2.0"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
-    "xo": "^0.16.0"
+    "ava": "^0.22.0",
+    "xo": "^0.18.2"
   },
   "scripts": {
     "test": "xo && ava"
@@ -41,7 +41,7 @@
       "src/dist/**"
     ],
     "rules": {
-      "babel/arrow-parens": [
+      "arrow-parens": [
         "error",
         "always"
       ],
@@ -49,7 +49,7 @@
         "error",
         "always-multiline"
       ],
-      "babel/object-curly-spacing": [
+      "object-curly-spacing": [
         "error",
         "always"
       ]

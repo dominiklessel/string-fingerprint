@@ -37,10 +37,11 @@
     "esnext": true,
     "space": true,
     "ignores": [
-      "test/*"
+      "test/**",
+      "src/dist/**"
     ],
     "rules": {
-      "arrow-parens": [
+      "babel/arrow-parens": [
         "error",
         "always"
       ],
@@ -48,7 +49,7 @@
         "error",
         "always-multiline"
       ],
-      "object-curly-spacing": [
+      "babel/object-curly-spacing": [
         "error",
         "always"
       ]

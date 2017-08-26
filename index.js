@@ -50,6 +50,7 @@ const toFingerprint = (string, joinSeparator) => {
   return normalizeUnicodeString(string)
     .trim()
     .replace(/([a-z])([A-Z])/g, '$1 $2')
+    .replace(/\+/gi, '')
     .toLowerCase()
     .replace(unicodePunctuation, '')
     .replace(unicodeControlChars, '')

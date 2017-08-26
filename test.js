@@ -16,6 +16,8 @@ const testStrings = {
   'Donic-Schildkröt': 'donicschildkrot',
   'Ambré': 'ambre',
   'CAFèNOIR': 'cafe noir',
+  'KENDALL + KYLIE': 'kendall kylie',
+  'MOA - Master of Arts': 'arts master moa of',
 };
 
 const testStringsMinusJoinSeparator = {
@@ -27,6 +29,8 @@ const testStringsMinusJoinSeparator = {
   'Donic-Schildkröt': 'donicschildkrot',
   'Ambré': 'ambre',
   'CAFèNOIR': 'cafe-noir',
+  'KENDALL + KYLIE': 'kendall-kylie',
+  'MOA - Master of Arts': 'arts-master-moa-of',
 };
 
 // Tests

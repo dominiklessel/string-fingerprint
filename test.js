@@ -14,8 +14,8 @@ const testStrings = {
   'K•Swiss': 'kswiss',
   'Rudolf Scheer & Söhne': 'rudolf scheer sohne',
   'Donic-Schildkröt': 'donicschildkrot',
-  Ambré: 'ambre',
-  CAFèNOIR: 'cafe noir',
+  'Ambré': 'ambre',
+  'CAFèNOIR': 'cafe noir',
 };
 
 const testStringsMinusJoinSeparator = {
@@ -25,8 +25,8 @@ const testStringsMinusJoinSeparator = {
   'K•Swiss': 'kswiss',
   'Rudolf Scheer & Söhne': 'rudolf-scheer-sohne',
   'Donic-Schildkröt': 'donicschildkrot',
-  Ambré: 'ambre',
-  CAFèNOIR: 'cafe-noir',
+  'Ambré': 'ambre',
+  'CAFèNOIR': 'cafe-noir',
 };
 
 // Tests

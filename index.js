@@ -1,6 +1,4 @@
 
-'use strict';
-
 // Modules
 const xRegExp = require('xregexp');
 
